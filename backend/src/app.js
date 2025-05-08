@@ -23,10 +23,11 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ['https://food-app-wtkv.vercel.app' || "http://localhost:3000"],
+    origin: ["http://localhost:3000" || "https://food-app-wtkv.vercel.app"],
   })
 );
 
+// https://food-app-wtkv.vercel.app
 app.use('/api/foods', foodRouter);
 app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
