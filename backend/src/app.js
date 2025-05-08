@@ -32,12 +32,12 @@ app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/upload', uploadRouter);
 
-const publicFolder = path.join(__dirname, 'public');
-app.use(express.static(publicFolder));
+// const publicFolder = path.join(__dirname, 'public');
+// app.use(express.static(publicFolder));
 
-app.get('*', (req, res) => {
-  const indexFilePath = path.join(publicFolder, 'index.html');
-  res.sendFile(indexFilePath);
-});
+// app.get('*', (req, res) => {
+//   const indexFilePath = path.join(publicFolder, 'index.html');
+//   res.sendFile(indexFilePath);
+// });
 
 export default app;
