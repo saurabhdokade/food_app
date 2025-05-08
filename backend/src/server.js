@@ -20,8 +20,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ['https://food-app-wtkv.vercel.app/'],
-  })
+    origin: ['https://food-app-wtkv.vercel.app/'],  })
 );
 
 app.use('/api/foods', foodRouter);
